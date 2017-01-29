@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Instacart-Become a Shopper</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/script.js"></script>
+	<script  src="js/jquery.validate.js"></script>
+	  <link rel="stylesheet" href="css/style.css">
+ 
+  
+</head>
+<body id="applicationpage" data-target=".navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+<a class="navbar-band" href="#about"><img src="img/logo.png"/></a>
+	 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="#about">Why Shopper</a></li>
+		 <li><a href="#positions">Positions</a></li>
+		<li><a href="#skills">FAQ</a></li>
+     
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid container-toppadding col-lg-8 clearfloat">
+    <div class="row">	
+  <div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h1 class="panel-title">Apply for Shopper in quick 2 steps!</h1>
+    </div>
+    <div class="panel-body">
+      <form name="applicationform" id="applicationform" method="post" action="" novalidate="novalidate">
+        
+        <div id="applicationpage1" class="shopper">
+          <fieldset>
+            <legend>Step 1 of 2</legend>
+
+            <div class="form-group">
+              <label class="col-lg-2  control-label" for="fname">First Name: </label>
+              <div class="col-lg-6">
+                <input type="text" placeholder="First Name" id="fname" name="fname" class="form-control" autocomplete="off">
+              </div>
+            </div>
+            <div class="clearfix" style="height: 10px;clear: both;"></div>
+			 <div class="form-group">
+              <label class="col-lg-2  control-label" for="lname">Last Name: </label>
+              <div class="col-lg-6">
+                <input type="text" placeholder="Last Name" id="lname" name="lname" class="form-control" autocomplete="off">
+              </div>
+            </div>
+            <div class="clearfix" style="height: 10px;clear: both;"></div>
+			<div class="form-group">
+              <label class="col-lg-2  control-label" for="uemail">Your Email: </label>
+              <div class="col-lg-6">
+                <input type="text" placeholder="Your Email" id="uemail" name="uemail" class="form-control" autocomplete="off">
+              </div>
+            </div>
+
+            <div class="clearfix" style="height: 10px;clear: both;"></div>
+			<div class="form-group">
+              <label class="col-lg-2  control-label" for="phone">Phone: </label>
+              <div class="col-lg-6">
+                <input  placeholder="Your Phone" id="phone" name="phone" class="form-control" autocomplete="off">
+              </div>
+            </div>
+           <div class="clearfix" style="height: 10px;clear: both;"></div>
+			<div class="form-group">
+              <label class="col-lg-2  control-label" for="zip">zip: </label>
+              <div class="col-lg-6">
+                <input  placeholder="Zip" id="zip" name="zip" class="form-control" autocomplete="off">
+              </div>
+            </div>
+            <div class="clearfix" style="height: 10px;clear: both;"></div>
+
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-4">
+                <button class="btn btn-apply next" type="button">Next <span class="fa fa-arrow-right"></span></button> 
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div id="applicationform2" class="shopper" style="display: none" >
+          <fieldset>
+            <legend>Step 2 of 2</legend>
+
+             <p> </p>
+
+            <div class="clearfix" style="height: 10px;clear: both;"></div>
+                <div>
+				  <label >
+					<input type="checkbox" id="checkboxcheck" name="checkboxcheck" class="form-control">
+					<span class="custom-check"></span>
+					<span class="biggerlabelfont">I agree to Instacart 's running a background check for shopper.</span>
+				  </label>
+				</div>
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-4">
+                <button class="btn btn-default back" type="button"><span class="fa fa-arrow-left"></span> Back</button> 
+                <button class="btn btn-apply submitbtn" type="button">Submit </button> 
+                <img src="img/spinner.gif" alt="" id="loader" style="display: none">
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+      </form>
+	  <div>
+    </div><!--end panel primary-->
+
+   </div>  
+ </div>
+</div>
+
+<footer class="container-fluid text-center">
+ 
+  <p>&copy 2017 <strong>Instacart Shopper</strong> All Rights Reserved.	 </p>
+</footer>
+
+</script>
+</body>
+</html>

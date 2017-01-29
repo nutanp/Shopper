@@ -14,7 +14,7 @@
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="myPage" data-target=".navbar">
+<body id="shopperpage" data-target=".navbar">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -53,39 +53,17 @@ giving customers more time to do what they love.
 
    <div class="container-fluid">
     <div class="row">
-    <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-         <span class="glyphicon glyphicon-usd"> </span>Earn extra income
-        </div>
-        <div class="panel-body">
-          <p>Get paid weekly. Work Sundays to maximize your hours and pay.</p>
-        </div>
-        
-      </div>
+   <dl><dt class="greenfont "><span class="greenfont glyphicon glyphicon-time"> </span>Be Independent</dt> 
+	      <dd>Schedule work around your own life.</dd>
+		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-heart"> </span>Have Fun</dt>
+		  <dd>Spend time shopping, exploring new things and being active.</dd>
+		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-usd"> </span>Earn extra income</dt>
+		   <dd>Get paid weekly. Work Sundays to maximize your hours and pay.</dd>
+	  </dl>	   
+	  
+	
     </div>
-	 <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <span class="glyphicon glyphicon-time"> </span>Be Independent
-        </div>
-        <div class="panel-body">
-          <p>Schedule work around your own life.<br></p>
-                 </div>
-       
-      </div>
-    </div>
-	 <div class="col-sm-4">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-         <span class="glyphicon glyphicon-heart"> </span>Have Fun
-        </div>
-        <div class="panel-body">
-          <p>Spend time shopping, exploring new things and being active.</p>
-        </div>
-      
-      </div>
-    </div>
+
   
  
   </div>
@@ -95,7 +73,7 @@ giving customers more time to do what they love.
 <br>
 session and start work within one week!</h3>
 
-       <div class="centeralign"><button class="text-center btn btn-apply btn-lg ">Apply Now </button></div>
+       <div class="centeralign"><button class="text-center btn btn-apply btn-lg "  onclick="location.href = 'application.html';">Apply Now </button></div>
 	  
     </div>
   </div>
@@ -136,7 +114,7 @@ session and start work within one week!</h3>
 </div>
 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
+  <a href="#shopperpage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
   <p>&copy 2017 <strong>Instacart Shopper</strong> All Rights Reserved.	 </p>
@@ -145,7 +123,7 @@ session and start work within one week!</h3>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#shopperpage']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
