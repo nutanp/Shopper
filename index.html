@@ -12,6 +12,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="js/script.js"></script>
+  <script  src="js/jquery.validate.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="shopperpage" data-target=".navbar">
@@ -29,9 +30,36 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-         <li><a href="#about">Why Shopper</a></li>
+         <li><a href="#home">Home</a></li>
 		 <li><a href="#positions">Positions</a></li>
 		<li><a href="#skills">FAQ</a></li>
+		 <li><a href="#login" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
+		 
+		  <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                        <li>
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
+                                    </div>
+                                    <div class="form-group">
+                                       <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                       <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </li>
+                       
+                     </ul>
+		 
+		 </li>
      
        
       </ul>
@@ -45,19 +73,21 @@
       <img class="img-responsive" src="img/groceryshopping.jpg" alt="Chania"> 
     </div>
     <div class="col-sm-8">
-      <h1>Become a Shopper</h1>
+      <h1 class="margin-header">Become a Shopper</h1>
       <h4>
 Earn money shopping and delivering groceries,
 giving customers more time to do what they love.
 </h4>
 
-   <div class="container-fluid">
+   <div class="container-fluid container-top-less-padding">
     <div class="row">
-   <dl><dt class="greenfont "><span class="greenfont glyphicon glyphicon-time"> </span>Be Independent</dt> 
+   <dl><dt class="greenfont "><span class="greenfont glyphicon glyphicon-time"> </span>&nbsp;Be Independent</dt> 
 	      <dd>Schedule work around your own life.</dd>
-		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-heart"> </span>Have Fun</dt>
+		  <br>
+		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-heart"> </span>&nbsp;Have Fun</dt>
 		  <dd>Spend time shopping, exploring new things and being active.</dd>
-		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-usd"> </span>Earn extra income</dt>
+		  <br>
+		  <dt class="greenfont"><span class="greenfont glyphicon glyphicon-usd"> </span>&nbsp;Earn extra income</dt>
 		   <dd>Get paid weekly. Work Sundays to maximize your hours and pay.</dd>
 	  </dl>	   
 	  
@@ -114,19 +144,21 @@ session and start work within one week!</h3>
 </div>
 
 <footer class="container-fluid text-center">
-  <a href="#shopperpage" title="To Top">
+  <a href="#shopperpage" title="ToTop">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
+  <br>
+  <br>
   <p>&copy 2017 <strong>Instacart Shopper</strong> All Rights Reserved.	 </p>
 </footer>
 
 <script>
 $(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#shopperpage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
+  // Add smooth scrolling to all links in  footer link
+  $("footer a[href='#shopperpage']").on('click', function(event) {
+    
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
+     
       event.preventDefault();
 
       // Store hash

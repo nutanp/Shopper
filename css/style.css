@@ -1,4 +1,7 @@
- 
+ body{
+	 font-size:16px;
+	 color:#444;
+ }
  
  
   .navbar-default {
@@ -32,9 +35,11 @@
   color: white;
   display: none;
 }
+
 .help-inline{color:red;}
+
 .panel-heading{padding-top:45px;padding-bottom:45px;}
-input[type=checkbox]:checked+.custom-check::before {
+  input[type=checkbox]:checked+.custom-check::before {
   display: block;
   color: #43B02A;
   background-color: #fff;
@@ -43,8 +48,9 @@ input[type=checkbox]:checked+.custom-check::before {
 	
  span.biggerlabelfont{font-size:18px;font-weight:500;}
  .clearfloat{float:none;}
+ 
  a:focus, a:hover {
-    color: #f4511e;
+    
     text-decoration: none;
 }
  .panel-primary>.panel-heading {
@@ -58,6 +64,13 @@ input[type=checkbox]:checked+.custom-check::before {
   .container-toppadding{
 	  padding-top:120px;
   }
+  .container-top-less-padding{
+	  padding-top:30px;
+  }
+  .margin-header{
+	  margin-top:40px;
+	  margin-bottom:20px;
+  }
   .logo-small {
       color: #f4511e;
       font-size: 50px;
@@ -66,7 +79,10 @@ input[type=checkbox]:checked+.custom-check::before {
       color: #f4511e;
       font-size: 200px;
   }
-
+.navbar-default .navbar-nav>.open>a{
+	   color: #61B450 !important;
+      background-color: #fff !important;
+}
   .carousel-control.right, .carousel-control.left {
       background-image: none;
       color: #f4511e;
@@ -131,6 +147,8 @@ input[type=checkbox]:checked+.custom-check::before {
       border-radius: 0;
     
   }
+  footer a {color:#61B450;}
+  footer a:hover {color:#FF5600;}
   .navbar li{  
            font-size: 1.5em;
            line-height: 1.5em;
