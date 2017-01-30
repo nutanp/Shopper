@@ -10,8 +10,10 @@ https://nutanp.github.io/Shopper/application.html
 https://nutanp.github.io/Shopper/application.html
 - They submit the form and are presented with a confirmation.
 https://nutanp.github.io/Shopper/application.html(confirmation page)
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 ### Tech
 - HTML5
 - CSS3
